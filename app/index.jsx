@@ -1,9 +1,31 @@
-import { Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native'
+import logo from '../assets/images/icon.png'
 
-export default function TabsScreen() {
+const Home = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Tabs Screen</Text>
+    <View style={styles.container} >
+        <Image source={logo} style={styles.img} />
+            <Text style={[styles.title, {color: 'purple'}]}>The Number 1</Text>
+            <Text style={{marginTop: 10, marginBottom: 10,}}>Reading List App</Text>
     </View>
-  );
+  )
 }
+
+export default Home
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    title: {
+        fontWeight: 'bold',
+        fontSize: 18,
+    },
+    img: {
+        marginVertical: 20,
+        height: 50,
+        width: 50,
+    },
+})
