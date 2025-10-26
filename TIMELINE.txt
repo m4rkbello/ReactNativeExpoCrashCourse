@@ -1,3 +1,5 @@
 1. INSTALL THE EXPO
     ->npx create-expo-app@latest
-    ADDED
+    ADD A NAME to it 
+2. INSTALL EXPO-ROUTER OR SA REACTNATIVE CLI NI KAY NATIVESTACK OR SA REACTJS KAY REACT-ROUTER-DOM
+npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
