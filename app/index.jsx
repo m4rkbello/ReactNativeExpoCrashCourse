@@ -1,17 +1,18 @@
 import { Link } from 'expo-router'
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text } from 'react-native'
 import logo from '../assets/images/icon.png'
+import ThemeView from '../components/ThemeView'
 
 const Home = () => {
   return (
-    <View style={styles.container} >
+    <ThemeView style={styles.container}>
         <Image source={logo} style={styles.img} />
             <Text style={[styles.title, {color: 'purple'}]}>The Number 1</Text>
             <Text style={{marginTop: 10, marginBottom: 10,}}>Reading List App</Text>
 
             <Link href="/about" style={styles.link}>About Page</Link>
             <Link href="/contact" style={styles.link}>Contact Page</Link>
-    </View>
+    </ThemeView>
   )
 }
 
