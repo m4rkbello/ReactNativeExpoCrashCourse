@@ -14,7 +14,7 @@ const Home = () => {
             <Link href="/contact" style={styles.link}>Contact Page</Link>
     </ThemeView>
   )
-}
+}   
 
 export default Home
 
